@@ -1,0 +1,12 @@
+﻿@using Class3.Models
+@model List<Class3.Models.Item>
+
+    
+@foreach (Item anItem in Model)
+{
+    <p>
+        @anItem.Code
+        @anItem.Name
+        @anItem.UnitPrice
+    </p>
+}
